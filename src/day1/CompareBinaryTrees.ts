@@ -1,13 +1,13 @@
 export default function compare(a: BinaryNode<number> | null, b: BinaryNode<number> | null): boolean {
-  //base case
+  //base case, structural check
   if(a === null && b === null){
     return true;
   }
-  //next base case
+  //next base case, structural check
   if(a === null || b === null){
     return false;
   }
-  //last base case
+  //last base case, value check
   if(a.value !== b.value){
     return false;
   }
